@@ -1,0 +1,2297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home{
+    height: 120vh;
+    background-color: #EEEEEE;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 999;
+  }
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.2);
+}
+
+.nav .logo{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.logo span{
+    color: red;
+}
+
+.nav-list{
+    width: 45%;
+    align-self: center;
+}
+
+.nav .nav-list ul{
+    display: flex;    
+}
+
+.nav li{
+    list-style: none;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #837f7f;
+    transition: color 0.4s;
+}
+
+
+.nav-list .line{
+    content: "";
+    width: 5%;
+    height: 2%;
+    background-color: red;
+    position: absolute;
+    bottom: 2px;
+}
+
+.nav li:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.nav .flist{
+    color: black;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4% 5%;
+    padding-top: 6%;
+}
+
+
+.header .img{
+    width: 40%;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+.header .btn{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    
+}
+
+.btn .book{
+    background-color: #CE1212;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0px 50px 50px 50px;
+    transition: background-color 0.5s;
+}
+
+.btn .vid{
+    display: flex;
+    border-radius: 50px 50px 50px 50px;
+    border-left: 9px solid #E61414;
+    color: black;
+    transition: color 0.01s;
+}
+
+.btn .vid:hover{
+    color: #E61414;
+}
+
+.btn .vid i{
+    text-align: center;
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding: 8px;
+    background-color: white;
+    border-radius: 45%;
+    width: 30px;
+    height: 30px;
+    transition: color 0.5s;
+}
+
+.btn .vid h4{
+    font-family: open sans;
+    font-weight: 600;
+    padding: 15px 32px;
+    font-size: 16px;
+    transition: color 0.5s;
+}
+
+.btn .vid h4:hover{
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+}
+
+.btn .book:hover:hover{
+    cursor: pointer;
+    background-color: #E61414;
+}
+
+.header img{
+    width: 100%;
+    text-shadow: 2px 2px 7px rgb(0, 0, 0);
+}
+
+.header .img:hover{
+  animation: shake 0.2s infinite;
+}
+
+@keyframes shake {
+    50% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    100% {
+      transform: translate(1px, -3px) rotate(-1deg);
+    }
+  }
+
+.header .text{
+    width: 40%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #696868;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.header .text h2{
+    font-family: amatic SC;
+    font-weight: 700;
+    font-size: 65px;
+    color: #37373F;
+}
+
+.chefs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 115vh;
+}
+
+.chefs .text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8%;
+    margin-top: 5%;
+}
+
+.chefs .text h6{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    color: #837f7f;
+}
+
+.chefs .text h2{
+    font-family: Amatic SC;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(33, 37, 41);
+}
+
+.chefs .text h2 span{
+    color: rgb(219, 1, 1);
+}
+.chefs .cards{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 8%;
+}
+
+.chefs .card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    height: 100%;
+    font-family: inter, sans-serif;
+    transition: transform 0.8s;
+}
+
+.chefs .card:hover{
+    transform: scale(1.1);
+}
+
+.card .img{
+    position: relative;
+}
+
+.card .img .icon{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f1ebe49c;
+    width: 15%;
+    height: 60%;
+    border-radius: 4%;
+    opacity: 0;
+    transition: opacity 0.5s 0.5s;
+}
+
+.card .img .icon:hover{
+    opacity: 1;
+    right: 15px;
+}
+
+.card .img .icon i{
+    color: #a7a4a3;
+    transition: color 0.2s;
+}
+
+.card .img .icon i:hover{
+    color: #383838;
+}
+
+.card h2{
+    font-weight: 700;
+    font-size: 19px;
+    color: black;
+}
+
+.card h6{
+    font-family: Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji;
+    font-weight: 400;
+    font-size: 16px;
+    color: #837f7f;
+}
+
+.card p{
+    font-family: Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: italic;
+    color: #837f7f;
+}
+
+.chefs .card img{
+    width: 100%;
+    border-radius: 2%;
+}
+
+.chefs .card p{
+    width: 80%;
+    margin: auto;
+}
+
+.gallery{
+    background-color: #EEEEEE;
+    height: 200vh;
+}
+
+
+.gallery .ftext{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8%;
+    margin-top: 5%;
+    padding-top: 5%;
+}
+
+.gallery .ftext h6{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    color: #837f7f;
+}
+
+.gallery .ftext h2{
+    font-family: Amatic SC;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(33, 37, 41);
+}
+
+.gallery .ftext h2 span{
+    color: rgb(219, 1, 1);
+}
+
+.gallery .imgs{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 2% 10%;
+}
+
+.item1,.item2,.item3{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid white;
+  }
+
+.gallery-item img {
+    display: block;
+    transition: all 300ms ease-in-out;
+    width: 100%;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.07);
+}
+
+.gallery-item .text {
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #0000005e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 100%;
+    z-index: 2;
+    transition: all 400ms ease-in-out;
+}
+
+.gallery-item:hover .text {
+    top: 0%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact .text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8%;
+    margin-top: 5%;
+    padding-top: 5%;
+}
+
+.contact .text h6{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    color: #837f7f;
+}
+
+.contact .text h2{
+    font-family: Amatic SC;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(33, 37, 41);
+}
+
+.contact .text h2 span{
+    color: rgb(219, 1, 1);
+}
+
+.contact .map{
+    width: 100%;
+    text-align: center;
+}
+
+.map iframe{
+    width: 80%;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 7%;
+}
+
+.contacts .f, .s{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts .item{
+    background-color: #EEEEEE;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts .item i{
+    display: flex;
+    background-color: rgb(189, 5, 5);
+    width: 10%;
+    height: 100%;
+    border-radius: 80%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contacts .item .info{
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+    height: 110%;
+    justify-content: space-between;
+}
+
+.contacts .item .info h2{
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #7D7D7D;
+}
+
+.contacts .item .info p{
+    font-family: Open Sans ;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.contacts .item .info p span{
+    font-weight: 700;
+}
+
+.contact .form{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.form .f{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.form .name, .form .email{
+    padding: 20px;
+    width: 500px;
+}
+
+
+.form .subject{
+    padding: 20px;
+    width: 1060px;
+}
+
+.form .message{
+    padding:70px;
+    width: 960px;
+
+}
+
+.form .btn button{
+    background-color: #CE1212;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4rem;
+    transition: background-color 0.5s;
+}
+
+.form .btn button:hover{
+    cursor: pointer;
+    background-color: #E61414;
+}
+
+footer {
+    background: linear-gradient(#00000046, #00000046),
+      url("images/textured-metal-background.jpg");
+    background-position: cover;
+    background-position: right;
+    color: white;
+    padding: 2rem 0;
+    display: flex;
+    margin-top: 8%;
+    padding-top: 7%;
+  }
+  
+  footer .title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem 0;
+  }
+  
+  footer .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .mealify-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8%;
+    width: 15%;
+    gap:15px
+}
+
+.mealify-container p{
+    margin: auto -20px;
+    text-align: center;
+    font-family: open sans;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.mealify-social p{
+    font-family: inter;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.mealify-social .line{
+    background-color: white;
+    width: 110%;
+    height: 1px;
+}
+
+.mealify-social .socialmedia{
+    padding: 1rem 0;
+}
+
+.mealify-social .socialmedia a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.mealify-social .socialmedia i{
+}
+
+
+.mealify-container h2{
+    font-family: open sans;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+  .mealify-container h2 span{
+    color: red;
+  }
+  
+  .mealify {
+    display: flex;
+    align-items: center;
+}
+  
+  .mealify img {
+    width: 2.5rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  
+ 
+  .mealify-social p {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  .socialmedia ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+.newsletter{
+    width: 40%;
+    margin-right: 5%;
+}  
+
+.newsletter .title{
+    font-family: inter;
+    font-weight: 700;
+    font-size: 19px;
+}  
+  
+  .newsletter .info {
+    padding: 1rem 0;
+    font-family: open sans;
+    font-weight: 400;
+    font-size: 16px;
+  }
+   
+  .newsletteremail {
+    display: flex;
+    flex-direction: column;
+}
+
+.newslettersub{
+    display: flex;
+    gap:5px
+}
+
+
+  .newsletteremail .btn{
+       background-color: #CE1212;
+        border: none;
+        color: white;
+        padding: 6px 6px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        display: inline-block;
+        cursor: pointer;
+  }
+
+
+  .newsletterlist ul{
+    font-family: open sans;
+    font-weight: 400;
+    font-size: 16px;
+    list-style: none;
+  }
+
+  .newslettersub .email{
+    width: 70%;
+    padding: 2%;  
+  }
+
+  
+  
+  .newsletterlist ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .newsletterlist li {
+    padding: 0.5rem;
+    width: 40%;
+    transition: all 500ms ease-in-out;
+  }
+  
+  .newsletter li:hover {
+    transform: translateX(3px);
+    background-color: #696868;
+}
+  
+  .touch {
+    width: 25%;
+    margin-right: 5%;
+  }
+
+ .touch .title{
+    font-family: inter;
+    font-weight: 700;
+    font-size: 19px;
+} 
+
+  .touch .info {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    font-family: open sans;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  .touch .info i {
+    color: red;
+    display: inline-block;
+    padding: 1rem;
+  }
+  
+
+     /* Mobiledevicce */
+
+@media (max-width:640px) {
+
+    .home{
+        height: 120vh;
+        background-color: #EEEEEE;
+    
+    }
+    
+    .nav-list .line{
+        content: "";
+        width: 12%;
+        height: 2%;
+        background-color: red;
+        position: absolute;
+        bottom: 2px;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 10vh;
+        z-index: 999;
+      }
+    
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        padding: 20px 0;
+        box-shadow: 0 3px 4px 0 rgba(0,0,0,.2);
+    }
+    
+    .nav .logo{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    .logo span{
+        color: red;
+    }
+    
+    .nav-list{
+        width: 45%;
+        align-self: center;
+    }
+    
+    .nav .nav-list ul{
+        display: flex;   
+    }
+    
+    .nav li{
+        list-style: none;
+        padding: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+        color: #837f7f;
+        transition: color 0.4s;
+    }
+    
+    .nav li:hover{
+        color: black;
+        cursor: pointer;
+    
+    }
+    
+    .nav .flist{
+        color: black;
+    }
+    
+    .header{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin: 15% 0;
+        padding-top: 6%;
+        height: aut;
+        background-color: #EEEEEE;
+    }
+    
+    
+    .header .img{
+        width: 100%;
+        filter: drop-shadow(0px 0px 5px black);
+    }
+    
+    .header .btn{
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 35px;
+        
+    }
+    
+    .btn .book{
+        background-color: #CE1212;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 0px 50px 50px 50px;
+        transition: background-color 0.5s;
+    }
+    
+    .btn .vid{
+        display: flex;
+        border-radius: 50px 50px 50px 50px;
+        border-left: 9px solid #E61414;
+        color: black;
+        transition: color 0.01s;
+    }
+    
+    .btn .vid:hover{
+        color: #E61414;
+    }
+    
+    .btn .vid i{
+        text-align: center;
+        display: flex;
+        padding: 4px;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        padding: 8px;
+        background-color: white;
+        border-radius: 45%;
+        width: 30px;
+        height: 30px;
+        transition: color 0.5s;
+    }
+    
+    .btn .vid h4{
+        font-family: open sans;
+        font-weight: 600;
+        padding: 15px 32px;
+        font-size: 16px;
+        transition: color 0.5s;
+    }
+    
+    .btn .vid h4:hover{
+        cursor: pointer;
+    }
+    
+    .btn a{
+        text-decoration: none;
+    }
+    
+    .btn .book:hover:hover{
+        cursor: pointer;
+        background-color: #E61414;
+    }
+    
+    .header img{
+        width: 100%;
+        text-shadow: 2px 2px 7px rgb(0, 0, 0);
+    }
+    
+    .header .img:hover{
+      animation: shake 0.2s infinite;
+    }
+    
+    @keyframes shake {
+        50% {
+          transform: translate(1px, -1px) rotate(1deg);
+        }
+        100% {
+          transform: translate(1px, -3px) rotate(-1deg);
+        }
+      }
+    
+    .header .text{
+        width: 100%;
+        height: 45%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #696868;
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    .header .text h2{
+        font-family: amatic SC;
+        font-weight: 700;
+        font-size: 65px;
+        color: #37373F;
+    }
+
+    .chefs{
+        display: flex;
+        margin-top: 50%;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 115vh;
+    }
+    
+    .chefs .text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 8%;
+        margin-top: 5%;
+    }
+    
+    .chefs .text h6{
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 14px;
+        color: #837f7f;
+    }
+    
+    .chefs .text h2{
+        font-family: Amatic SC;
+        font-weight: 400;
+        font-size: 50px;
+        color: rgb(33, 37, 41);
+    }
+    
+    .chefs .text h2 span{
+        color: rgb(219, 1, 1);
+    }
+    .chefs .cards{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 8% 8%;
+        gap: 30px;
+    }
+    
+    .chefs .card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 10px;
+        height: 100%;
+        font-family: inter, sans-serif;
+        transition: transform 0.8s;
+    }
+    
+    .chefs .card:hover{
+        transform: scale(1.1);
+    }
+    
+    .card .img{
+        position: relative;
+    }
+    
+    .card .img .icon{
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #f1ebe49c;
+        width: 15%;
+        height: 60%;
+        border-radius: 4%;
+        opacity: 0;
+        transition: opacity 0.5s 0.5s;
+    }
+    
+    .card .img .icon:hover{
+        opacity: 1;
+        right: 15px;
+    }
+    
+    .card .img .icon i{
+        color: #a7a4a3;
+        transition: color 0.2s;
+    }
+    
+    .card .img .icon i:hover{
+        color: #383838;
+    }
+    
+    .card h2{
+        font-weight: 700;
+        font-size: 19px;
+        color: black;
+    }
+    
+    .card h6{
+        font-family: Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji;
+        font-weight: 400;
+        font-size: 16px;
+        color: #837f7f;
+    }
+    
+    .card p{
+        font-family: Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji;
+        font-weight: 400;
+        font-size: 15px;
+        font-style: italic;
+        color: #837f7f;
+    }
+    
+    .chefs .card img{
+        width: 100%;
+        border-radius: 2%;
+    }
+    
+    .chefs .card p{
+        width: 80%;
+        margin: auto;
+    }
+
+    .gallery{
+        background-color: #EEEEEE;
+        height: 200vh;
+        margin-top: 1500px;
+    }
+    
+    
+    .gallery .ftext{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 8%;
+        margin-top: 5%;
+        padding-top: 5%;
+    }
+    
+    .gallery .ftext h6{
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 14px;
+        color: #837f7f;
+    }
+    
+    .gallery .ftext h2{
+        font-family: Amatic SC;
+        font-weight: 400;
+        font-size: 50px;
+        color: rgb(33, 37, 41);
+    }
+    
+    .gallery .ftext h2 span{
+        color: rgb(219, 1, 1);
+    }
+    
+    .gallery .imgs{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-around;
+        margin: 2% 10%;
+    }
+    
+    .item1,.item2,.item3{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    
+    
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid white;
+      }
+    
+    .gallery-item img {
+        display: block;
+        transition: all 300ms ease-in-out;
+        width: 100%;
+    }
+    
+    .gallery-item:hover img {
+        transform: scale(1.07);
+    }
+    
+    .gallery-item .text {
+        position: absolute;
+        color: white;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: #0000005e;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 100%;
+        z-index: 2;
+        transition: all 400ms ease-in-out;
+    }
+    
+    .gallery-item:hover .text {
+        top: 0%;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 2800px;
+    }
+    
+    .contact .text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 8%;
+        margin-top: 5%;
+        padding-top: 5%;
+    }
+    
+    .contact .text h6{
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 14px;
+        color: #837f7f;
+    }
+    
+    .contact .text h2{
+        font-family: Amatic SC;
+        font-weight: 400;
+        font-size: 50px;
+        color: rgb(33, 37, 41);
+    }
+    
+    .contact .text h2 span{
+        color: rgb(219, 1, 1);
+    }
+    
+    .contact .map{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .map iframe{
+        width: 80%;
+    }
+    
+    .contacts{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .contacts .f, .s{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .contacts .item{
+        background-color: #EEEEEE;
+        padding: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contacts .item i{
+        display: flex;
+        background-color: rgb(189, 5, 5);
+        width: 10%;
+        height: 35px;
+        border-radius: 80%;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        color: white;
+    }
+    
+    .contacts .item .info{
+        display: flex;
+        flex-direction: column;
+        width: 88%;
+        height: 110%;
+        justify-content: space-between;
+    }
+    
+    .contacts .item .info h2{
+        font-family: Inter, sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #7D7D7D;
+    }
+    
+    .contacts .item .info p{
+        font-family: Open Sans ;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    .contacts .item .info p span{
+        font-weight: 700;
+    }
+    
+    .contact .form{
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .form .f{
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .form .name, .form .email{
+        padding: 20px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .form .subject{
+        padding: 20px;
+        width: 400px;
+    }
+    
+    .form .message{
+        padding:70px;
+        width: 300px;
+    
+    }
+    
+    .form .btn button{
+        background-color: #CE1212;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4rem;
+        transition: background-color 0.5s;
+    }
+    
+    .form .btn button:hover{
+        cursor: pointer;
+        background-color: #E61414;
+    }
+
+    footer {
+        background: linear-gradient(#00000046, #00000046),
+          url("images/textured-metal-background.jpg");
+        background-position: cover;
+        background-position: right;
+        color: white;
+        padding: 2rem 0;
+        display: flex;
+        margin-top: 8%;
+        padding-top: 7%;
+        flex-direction: column;
+        margin-top: 30%;
+      }
+      
+      footer .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+      
+      .mealify-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 8%;
+        width: 82%;
+        gap:15px;
+    }
+    
+    .mealify-container p{
+        margin: auto -20px;
+        text-align: center;
+        font-family: open sans;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    .mealify-social p{
+        font-family: inter;
+        font-weight: 700;
+        font-size: 19px;
+    }
+    
+    .mealify-social .line{
+        background-color: white;
+        width: 110%;
+        height: 1px;
+    }
+    
+    .mealify-social .socialmedia{
+        padding: 1rem 0;
+    }
+    
+    .mealify-social .socialmedia a{
+        color: white;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .mealify-social .socialmedia i{
+    }
+    
+    
+    .mealify-container h2{
+        font-family: open sans;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    
+      .mealify-container h2 span{
+        color: red;
+      }
+      
+      .mealify {
+        display: flex;
+        align-items: center;
+    }
+      
+      .mealify img {
+        width: 2.5rem;
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+      
+     
+      .mealify-social p {
+        position: relative;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+      }
+    
+      .socialmedia ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+      }
+    
+    .newsletter{
+        width: 100%;
+        margin-right: 5%;
+    }  
+    
+    .newsletter .title{
+        font-family: inter;
+        font-weight: 700;
+        font-size: 19px;
+    }  
+      
+      .newsletter .info {
+        padding: 1rem 0;
+        font-family: open sans;
+        font-weight: 400;
+        font-size: 16px;
+      }
+       
+      .newsletteremail {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .newslettersub{
+        display: flex;
+        gap:5px
+    }
+    
+    
+      .newsletteremail .btn{
+           background-color: #CE1212;
+            border: none;
+            color: white;
+            padding: 6px 6px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            display: inline-block;
+            cursor: pointer;
+      }
+    
+    
+      .newsletterlist ul{
+        font-family: open sans;
+        font-weight: 400;
+        font-size: 16px;
+        list-style: none;
+      }
+    
+      .newslettersub .email{
+        width: 70%;
+        padding: 2%;  
+      }
+    
+      
+      
+      .newsletterlist ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      
+      .newsletterlist li {
+        padding: 0.5rem;
+        width: 40%;
+        transition: all 500ms ease-in-out;
+      }
+      
+      .newsletter li:hover {
+        transform: translateX(3px);
+        background-color: #696868;
+    }
+      
+      .touch {
+        width: 100%;
+        margin-right: 5%;
+      }
+    
+     .touch .title{
+        font-family: inter;
+        font-weight: 700;
+        font-size: 19px;
+    } 
+    
+      .touch .info {
+        display: flex;
+        margin-bottom: 1rem;
+        align-items: center;
+        font-family: open sans;
+        font-weight: 400;
+        font-size: 16px;
+      }
+      
+      .touch .info i {
+        color: red;
+        display: inline-block;
+        padding: 1rem;
+      } 
+}
+
+
+
+     /* Tabletdevice */
+
+     @media (max-width:768px) {
+
+        .home{
+            height: 120vh;
+            background-color: #EEEEEE;        
+        }
+        
+
+        .nav-list .line{
+            content: "";
+            width: 8%;
+            height: 2%;
+            background-color: red;
+            position: absolute;
+            bottom: 2px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 10vh;
+            z-index: 999;
+          }
+        
+        .nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 3px 4px 0 rgba(0,0,0,.2);
+        }
+        
+        .nav .logo{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        
+        .logo span{
+            color: red;
+        }
+        
+        .nav-list{
+            width: 45%;
+            align-self: center;
+        }
+        
+        .nav .nav-list ul{
+            display: flex;   
+        }
+        
+        .nav li{
+            list-style: none;
+            padding: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            font-size: 17px;
+            color: #837f7f;
+            transition: color 0.4s;
+        }
+        
+        .nav li:hover{
+            color: black;
+            cursor: pointer;
+        
+        }
+        
+        .nav .flist{
+            color: black;
+        }
+        
+        .header{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20% 0;
+            padding-top: 6%;
+            height: aut;
+            background-color: #EEEEEE;
+        }
+        
+        
+        .header .img{
+            width: 80%;
+            filter: drop-shadow(0px 0px 5px black);
+        }
+        
+        .header .btn{
+            padding: 30px 0;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            gap: 35px;
+            
+        }
+        
+        .btn .book{
+            background-color: #CE1212;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 0px 50px 50px 50px;
+            transition: background-color 0.5s;
+        }
+        
+        .btn .vid{
+            display: flex;
+            border-radius: 50px 50px 50px 50px;
+            border-left: 9px solid #E61414;
+            color: black;
+            transition: color 0.01s;
+        }
+        
+        .btn .vid:hover{
+            color: #E61414;
+        }
+        
+        .btn .vid i{
+            text-align: center;
+            display: flex;
+            padding: 4px;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            padding: 8px;
+            background-color: white;
+            border-radius: 45%;
+            width: 30px;
+            height: 30px;
+            transition: color 0.5s;
+        }
+        
+        .btn .vid h4{
+            font-family: open sans;
+            font-weight: 600;
+            padding: 15px 32px;
+            font-size: 16px;
+            transition: color 0.5s;
+        }
+        
+        .btn .vid h4:hover{
+            cursor: pointer;
+        }
+        
+        .btn a{
+            text-decoration: none;
+        }
+        
+        .btn .book:hover:hover{
+            cursor: pointer;
+            background-color: #E61414;
+        }
+        
+        .header img{
+            width: 100%;
+            text-shadow: 2px 2px 7px rgb(0, 0, 0);
+        }
+        
+        .header .img:hover{
+          animation: shake 0.2s infinite;
+        }
+        
+        @keyframes shake {
+            50% {
+              transform: translate(1px, -1px) rotate(1deg);
+            }
+            100% {
+              transform: translate(1px, -3px) rotate(-1deg);
+            }
+          }
+        
+        .header .text{
+            width: 100%;
+            height: 45%;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #696868;
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        
+        .header .text h2{
+            font-family: amatic SC;
+            font-weight: 700;
+            font-size: 65px;
+            color: #37373F;
+        }
+    
+        .chefs{
+            display: flex;
+            margin-top: 50%;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 115vh;
+        }
+        
+        .chefs .text{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 8%;
+            margin-top: 5%;
+        }
+        
+        .chefs .text h6{
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 14px;
+            color: #837f7f;
+        }
+        
+        .chefs .text h2{
+            font-family: Amatic SC;
+            font-weight: 400;
+            font-size: 50px;
+            color: rgb(33, 37, 41);
+        }
+        
+        .chefs .text h2 span{
+            color: rgb(219, 1, 1);
+        }
+        .chefs .cards{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 15% 15%;
+            gap: 30px;
+        }
+        
+        .chefs .card{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 10px;
+            height: 100%;
+            font-family: inter, sans-serif;
+            transition: transform 0.8s;
+        }
+        
+        .chefs .card:hover{
+            transform: scale(1.1);
+        }
+        
+        .card .img{
+            position: relative;
+        }
+        
+        .card .img .icon{
+            position: absolute;
+            top: 12px;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: #f1ebe49c;
+            width: 15%;
+            height: 60%;
+            border-radius: 4%;
+            opacity: 0;
+            transition: opacity 0.5s 0.5s;
+        }
+        
+        .card .img .icon:hover{
+            opacity: 1;
+            right: 15px;
+        }
+        
+        .card .img .icon i{
+            color: #a7a4a3;
+            transition: color 0.2s;
+        }
+        
+        .card .img .icon i:hover{
+            color: #383838;
+        }
+        
+        .card h2{
+            font-weight: 700;
+            font-size: 19px;
+            color: black;
+        }
+        
+        .card h6{
+            font-family: Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji;
+            font-weight: 400;
+            font-size: 16px;
+            color: #837f7f;
+        }
+        
+        .card p{
+            font-family: Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji;
+            font-weight: 400;
+            font-size: 15px;
+            font-style: italic;
+            color: #837f7f;
+        }
+        
+        .chefs .card img{
+            width: 100%;
+            border-radius: 2%;
+        }
+        
+        .chefs .card p{
+            width: 80%;
+            margin: auto;
+        }
+    
+        .gallery{
+            background-color: #EEEEEE;
+            height: 200vh;
+            margin-top: 1700px;
+        }
+        
+        
+        .gallery .ftext{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 8%;
+            margin-top: 5%;
+            padding-top: 5%;
+        }
+        
+        .gallery .ftext h6{
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 14px;
+            color: #837f7f;
+        }
+        
+        .gallery .ftext h2{
+            font-family: Amatic SC;
+            font-weight: 400;
+            font-size: 50px;
+            color: rgb(33, 37, 41);
+        }
+        
+        .gallery .ftext h2 span{
+            color: rgb(219, 1, 1);
+        }
+        
+        .gallery .imgs{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: space-around;
+            margin: 2% 10%;
+        }
+        
+        .item1,.item2,.item3{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+        }
+        
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            border: 2px solid white;
+          }
+        
+        .gallery-item img {
+            display: block;
+            transition: all 300ms ease-in-out;
+            width: 100%;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.07);
+        }
+        
+        .gallery-item .text {
+            position: absolute;
+            color: white;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            background-color: #0000005e;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 100%;
+            z-index: 2;
+            transition: all 400ms ease-in-out;
+        }
+        
+        .gallery-item:hover .text {
+            top: 0%;
+        }
+    
+        .contact{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 3800px;
+        }
+        
+        .contact .text{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 8%;
+            margin-top: 5%;
+            padding-top: 5%;
+        }
+        
+        .contact .text h6{
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 14px;
+            color: #837f7f;
+        }
+        
+        .contact .text h2{
+            font-family: Amatic SC;
+            font-weight: 400;
+            font-size: 50px;
+            color: rgb(33, 37, 41);
+        }
+        
+        .contact .text h2 span{
+            color: rgb(219, 1, 1);
+        }
+        
+        .contact .map{
+            width: 100%;
+            text-align: center;
+        }
+        
+        .map iframe{
+            width: 80%;
+        }
+        
+        .contacts{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .contacts .f, .s{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .contacts .item{
+            background-color: #EEEEEE;
+            padding: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .contacts .item i{
+            display: flex;
+            background-color: rgb(189, 5, 5);
+            width: 8%;
+            height: 35px;
+            border-radius: 80%;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            color: white;
+        }
+        
+        .contacts .item .info{
+            display: flex;
+            flex-direction: column;
+            width: 88%;
+            height: 110%;
+            justify-content: space-between;
+        }
+        
+        .contacts .item .info h2{
+            font-family: Inter, sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #7D7D7D;
+        }
+        
+        .contacts .item .info p{
+            font-family: Open Sans ;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        
+        .contacts .item .info p span{
+            font-weight: 700;
+        }
+        
+        .contact .form{
+            display: flex;
+            flex-direction: column;
+            height: 350px;
+            width: 100%;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .form .f{
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .form .name, .form .email{
+            padding: 20px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        
+        .form .subject{
+            padding: 20px;
+            width: 400px;
+        }
+        
+        .form .message{
+            padding:70px;
+            width: 300px;
+        
+        }
+        
+        .form .btn button{
+            background-color: #CE1212;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4rem;
+            transition: background-color 0.5s;
+        }
+        
+        .form .btn button:hover{
+            cursor: pointer;
+            background-color: #E61414;
+        }
+    
+        footer {
+            background: linear-gradient(#00000046, #00000046),
+              url("images/textured-metal-background.jpg");
+            background-position: cover;
+            background-position: right;
+            color: white;
+            padding: 2rem 0;
+            display: flex;
+            margin-top: 8%;
+            padding-top: 7%;
+            flex-direction: column;
+            margin-top: 30%;
+          }
+          
+          footer .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+          
+          .mealify-container {
+            display: flex;
+            flex-direction: column;
+            padding: 0 8%;
+            width: 82%;
+            gap:15px;
+        }
+        
+        .mealify-container p{
+            margin: auto -20px;
+            text-align: center;
+            font-family: open sans;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        
+        .mealify-social p{
+            font-family: inter;
+            font-weight: 700;
+            font-size: 19px;
+        }
+        
+        .mealify-social .line{
+            background-color: white;
+            width: 110%;
+            height: 1px;
+        }
+        
+        .mealify-social .socialmedia{
+            padding: 1rem 0;
+        }
+        
+        .mealify-social .socialmedia a{
+            color: white;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        .mealify-social .socialmedia i{
+        }
+        
+        
+        .mealify-container h2{
+            font-family: open sans;
+            font-weight: 700;
+            font-size: 30px;
+        }
+        
+          .mealify-container h2 span{
+            color: red;
+          }
+          
+          .mealify {
+            display: flex;
+            align-items: center;
+        }
+          
+          .mealify img {
+            width: 2.5rem;
+            display: inline-block;
+            margin-right: 0.5rem;
+          }
+          
+         
+          .mealify-social p {
+            position: relative;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1rem;
+          }
+        
+          .socialmedia ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+          }
+        
+        .newsletter{
+            width: 100%;
+            margin-right: 5%;
+        }  
+        
+        .newsletter .title{
+            font-family: inter;
+            font-weight: 700;
+            font-size: 19px;
+        }  
+          
+          .newsletter .info {
+            padding: 1rem 0;
+            font-family: open sans;
+            font-weight: 400;
+            font-size: 16px;
+          }
+           
+          .newsletteremail {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .newslettersub{
+            display: flex;
+            gap:5px
+        }
+        
+        
+          .newsletteremail .btn{
+               background-color: #CE1212;
+                border: none;
+                color: white;
+                padding: 6px 6px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                display: inline-block;
+                cursor: pointer;
+          }
+        
+        
+          .newsletterlist ul{
+            font-family: open sans;
+            font-weight: 400;
+            font-size: 16px;
+            list-style: none;
+          }
+        
+          .newslettersub .email{
+            width: 70%;
+            padding: 2%;  
+          }
+        
+          
+          
+          .newsletterlist ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+          }
+          
+          .newsletterlist li {
+            padding: 0.5rem;
+            width: 40%;
+            transition: all 500ms ease-in-out;
+          }
+          
+          .newsletter li:hover {
+            transform: translateX(3px);
+            background-color: #696868;
+        }
+          
+          .touch {
+            width: 100%;
+            margin-right: 5%;
+          }
+        
+         .touch .title{
+            font-family: inter;
+            font-weight: 700;
+            font-size: 19px;
+        } 
+        
+          .touch .info {
+            display: flex;
+            margin-bottom: 1rem;
+            align-items: center;
+            font-family: open sans;
+            font-weight: 400;
+            font-size: 16px;
+          }
+          
+          .touch .info i {
+            color: red;
+            display: inline-block;
+            padding: 1rem;
+          } 
+    }
+    
+    
+    
